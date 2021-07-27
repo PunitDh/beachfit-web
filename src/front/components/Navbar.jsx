@@ -29,7 +29,7 @@ function Navbar({ settings }) {
 						</div>
 						<div className="flex w-1/2 justify-end content-center">
 							<a className="inline-block text-gray-700 no-underline hover:text-gray-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								href="mailto:yvonnedallman@hotmail.co.uk" target="_blank" rel="noreferrer">
+								href="mailto:info@beachfitandwellbeing.com" target="_blank" rel="noreferrer">
 								<MailOutlineIcon className="fill-current h-4" />
 							</a>
 							<a className="inline-block text-gray-700 no-underline hover:text-gray-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"

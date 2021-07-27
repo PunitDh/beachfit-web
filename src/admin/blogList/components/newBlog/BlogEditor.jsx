@@ -91,11 +91,13 @@ function BlogEditor({ action, data, notification }) {
 
 								<div className="items-center justify-center bg-grey-lighter mb-4">
 									<div className="text-xl text-gray-600">Image</div>
-									<img className="w-24 h-auto" src={imagePreview} />
-									<label id="uploadButton" className="w-full flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-blue-700">
-										<ImageIcon />
-										<span className="mt-2 text-base leading-normal">Select an image</span>
-										<input type="file" className="hidden" name="image" accept="image/*" onChange={handleImagePreview} />
+
+									<label className="w-full flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-blue-700">
+										<div id="uploadButton"><ImageIcon />
+											<span className="mt-2 text-base leading-normal">Select an image</span>
+											<input type="file" className="hidden" name="image" accept="image/*" onChange={handleImagePreview} />
+										</div>
+										<img className="w-24 h-auto" src={imagePreview} />
 									</label>
 								</div>
 								<div className="mb-4">

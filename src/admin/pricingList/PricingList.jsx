@@ -80,14 +80,14 @@ export default function PricingList({ notification }) {
 				
 					{newPass ? <NewPricingCard type={PRICING_TYPE.pass} onCreate={() => { setNewPass(false) }} onCancel={() => { setNewPass(false) }} /> : <></>}
 				
-				<div data-testid="pricingcards">
+				<div data-testid="pricingcards" className="w-full">
 					{
-						(plans) ? plans.map(plan => <div key={plan.id}><PricingCard type={PRICING_TYPE.plan} data={plan} onUpdate={(target) => handleUpdate(target, PRICING_TYPE.plan)} onDelete={() => handleDelete(PRICING_TYPE.plan, plan.id)} /></div>) : <>You have no Plans.</>
+						(plans) ? plans.map(plan => <PricingCard key={plan.id} type={PRICING_TYPE.plan} data={plan} onUpdate={(target) => handleUpdate(target, PRICING_TYPE.plan)} onDelete={() => handleDelete(PRICING_TYPE.plan, plan.id)} />) : <>You have no Plans.</>
 					}
 				</div>
 				
 					{
-						(passes) ? passes.map(pass => <div key={pass.id}><PricingCard type={PRICING_TYPE.pass} data={pass} onUpdate={(target) => handleUpdate(target, PRICING_TYPE.pass)} onDelete={() => handleDelete(PRICING_TYPE.pass, pass.id)} /></div>) : <>You have no Passes.</>
+						(passes) ? passes.map(pass => <PricingCard key={pass.id} type={PRICING_TYPE.pass} data={pass} onUpdate={(target) => handleUpdate(target, PRICING_TYPE.pass)} onDelete={() => handleDelete(PRICING_TYPE.pass, pass.id)} />) : <>You have no Passes.</>
 					}
 
 			</div>

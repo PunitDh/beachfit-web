@@ -47,7 +47,7 @@ function Pricing({ settings }) {
 									return (
 										<div className="border rounded-lg text-center p-5 mx-auto md:mx-0 my-2 md:my-6 bg-gray-100 font-medium z-10 shadow-lg">
 											<div className>{plan.name}</div>
-											<div className="font-bold text-6xl mb-6 annual">${plan.price}</div><hr />
+											<div className="font-bold text-6xl mb-6 annual">${plan.price}<span className="text-base">/week</span></div><hr />
 											<div className="text-sm my-3">{plan.description}</div><hr />
 											<div className="text-sm my-3">{plan.sessions_per_week}</div><hr />
 											<div className="text-sm my-3">{plan.session_times}</div><hr />
@@ -68,7 +68,7 @@ function Pricing({ settings }) {
 								(passes.length > 0) ? passes.map(pass => {
 									return (
 
-										<div className="max-w-lg h-full bg-white shadow-md rounded-lg mx-auto">
+										<div className="max-w-lg h-full bg-white shadow-md rounded-lg my-auto mx-auto">
 											<div className="py-4 px-8 mt-3">
 												<div className="flex flex-col mb-8">
 													<h2 className="text-gray-700 font-semibold text-2xl tracking-wide mb-2">
