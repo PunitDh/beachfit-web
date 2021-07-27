@@ -23,7 +23,7 @@ export default function Blog({ id, notification }) {
 	}, []);
 
 	return (
-		<div data-testid="blogdata">
+		<div data-testid="blogdata" className="w-full">
 			{ blogData ? (<BlogEditor data={blogData} action={BLOG_ACTION.update} notification={notification} />) : <>Loading...</> }
 		</div>
 	);
